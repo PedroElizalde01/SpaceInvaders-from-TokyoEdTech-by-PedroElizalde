@@ -1,4 +1,29 @@
 # SpaceInvaders-from-TokyoEdTech-by-PedroElizalde
-The original idea and bases from this scripts where taken from the YouTube channel: 'TokyoEdTech' (Thanks for the tutorials :))
-Check out his channel:
-https://www.youtube.com/channel/UC2vm-0XX5RkWCXWwtBZGOXg
+Hi! This is a little summery of what this whole thing is about (I'm not very good at speaking English, so sorry if there is something grammatically wrong ;))
+
+1)  The original idea and bases from this scripts where taken from the YouTube channel: 'TokyoEdTech' (Thanks for the tutorials :))
+    Please check out his channel it has amazing tutorials!
+                                      https://www.youtube.com/channel/UC2vm-0XX5RkWCXWwtBZGOXg
+
+***************************************************************************************************************************************************
+2) I'm having problems with making the enemy to shoot me back. I made the function call 'fire_missile', I assign the key 'm' to call it every time I press it and it works fine. This is the function:
+
+    def fire_missile():
+	    n = random.randint(0, enemiesNum - 1)   # It search for a random enemy
+	    x = enemies[n].xcor()                   # Looks after the 'x' coordinate
+	    y = enemies[n].ycor() - 10              # Looks after the 'y' coordinate
+	    if y < 300:                             # Then, if the 'y' coordinate is lower than 300 (I choose this number because of what happens when I hit an enemy):
+		    play_sound("laser.wav")                  # Plays a sound effect
+		    missile.setposition(x, y)                # Sets the position of the missile on the same place than the coordinates of the enemy (To simulate that it shoots)
+		    missile.showturtle()                     # Shows the missile turtle (Because its hidden)
+	    else:
+		    fire_missile()                        # Otherwise, if the 'y' coordinate is higher than 300, it repeat the function until an enemy shoots
+        
+   What I want to do, is make the enemy to shoot me back every 5 seconds. But, every time I call the function with a time delay it doesn't work.
+   I tried by importing 'threading' and do:
+          threading.Timer(5.0, fire_missile).start()
+   However still doesn't work. I even made a function that count from 0 to 5 in five seconds and then call 'fire_missile' without succeeding.
+   Hope you have any idea of what I should do!
+   
+   ***************************************************************************************************************************************************
+   P.D: Check the YouTube channel I mentioned before!
