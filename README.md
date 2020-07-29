@@ -1,5 +1,5 @@
 # SpaceInvaders-from-TokyoEdTech-by-PedroElizalde
-Hi! This is a little summery of what this whole thing is about (I'm not very good at speaking English, so sorry if there is something grammatically wrong ;))
+Hi! This is a little summary of what this whole thing is about (I'm not very good at speaking English, so sorry if there is something grammatically wrong ;])
 
 1)  The original idea and bases from this scripts where taken from the YouTube channel: 'TokyoEdTech' (Thanks for the tutorials :))
     Please check out his channel it has amazing tutorials!
